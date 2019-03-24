@@ -30,7 +30,7 @@ cat ngrok > /data/data/com.termux/files/usr/bin/ngrok
 chmod 700 /data/data/com.termux/files/usr/bin/ngrok
 rm ngrok
 #chmod +x ngrok
-echo "Exemplos de comando = ngrok http 80"
+echo "Exemplo de comando (ngrok http 80 ou ngrok para ajuda)"
 
 
 
