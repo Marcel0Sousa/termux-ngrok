@@ -23,14 +23,13 @@ x86_64)
     echo "Arquitetura desconhecida"
 esac
 
-#wget "https://github.com/tchelospy/NgrokTest/blob/master/ngrok-stable-linux-${architectureURL}.zip"
 wget "https://github.com/tchelospy/NgrokTest/blob/master/ngrok-stable-linux-${architectureURL}.zip?raw=true" -O ngrok.zip
 unzip ngrok.zip
 cat ngrok > /data/data/com.termux/files/usr/bin/ngrok
 chmod 700 /data/data/com.termux/files/usr/bin/ngrok
 rm ngrok
 #chmod +x ngrok
-echo "Exemplo de comando (ngrok http 80 ou ngrok para ajuda)"
+echo "Exemplo de comando (ngrok http 80\nOu ngrok para ajuda)"
 
 
 
