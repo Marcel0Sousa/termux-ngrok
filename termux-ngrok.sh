@@ -3,7 +3,20 @@
 apt update && upgrade -y
 apt install -y wget figlet
 
-figlet NGROK
+k='\033[01;32m'
+echo
+echo "${k}████████╗ ██████╗██╗  ██╗███████╗██╗      ██████╗ ";
+echo "${k}╚══██╔══╝██╔════╝██║  ██║██╔════╝██║     ██╔═══██╗";
+echo "${k}   ██║   ██║     ███████║█████╗  ██║     ██║   ██║";
+echo "${k}   ██║   ██║     ██╔══██║██╔══╝  ██║     ██║   ██║";
+echo "${k}   ██║   ╚██████╗██║  ██║███████╗███████╗╚██████╔╝";
+echo "${k}   ╚═╝    ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ";
+echo "${k} /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/";
+echo
+echo "Deseja instalar o Ngrok? [Y/n]"
+read opcao
+case $opcao in
+y)
 echo
 echo "Downloading Termux-ngrok"
 case `dpkg --print-architecture` in
@@ -28,8 +41,20 @@ unzip ngrok.zip
 cat ngrok > /data/data/com.termux/files/usr/bin/ngrok
 chmod 700 /data/data/com.termux/files/usr/bin/ngrok
 rm ngrok
-#chmod +x ngrok
+
+echo "${k}███╗   ██╗ ██████╗ ██████╗  ██████╗ ██╗  ██╗";
+echo "${k}████╗  ██║██╔════╝ ██╔══██╗██╔═══██╗██║ ██╔╝";
+echo "${k}██╔██╗ ██║██║  ███╗██████╔╝██║   ██║█████╔╝ ";
+echo "${k}██║╚██╗██║██║   ██║██╔══██╗██║   ██║██╔═██╗ ";
+echo "${k}██║ ╚████║╚██████╔╝██║  ██║╚██████╔╝██║  ██╗";
+echo "${k}╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝";
+echo
 echo "Exemplo de comando (ngrok http 80\nOu ngrok para ajuda)"
+;;
+
+n)
+echo "Ngrok não instalado :("
+esac
 
 
 
