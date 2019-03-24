@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#sudo apt update && upgrade -y
-#sudo apt install -y wget figlet
+apt update && upgrade -y
+apt install -y wget figlet
 
 figlet NGROK
 echo
