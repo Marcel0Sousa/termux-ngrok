@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/bin/dash
 
 apt update && upgrade -y
-apt install -y wget figlet
+apt install -y wget
 
 k='\033[01;32m'
 echo
@@ -40,8 +40,8 @@ wget "https://github.com/tchelospy/NgrokTest/blob/master/ngrok-stable-linux-${ar
 unzip ngrok.zip
 cat ngrok > /data/data/com.termux/files/usr/bin/ngrok
 chmod 700 /data/data/com.termux/files/usr/bin/ngrok
-rm ngrok
-
+rm ngrok ngrok.zip
+clear
 echo "${k}███╗   ██╗ ██████╗ ██████╗  ██████╗ ██╗  ██╗";
 echo "${k}████╗  ██║██╔════╝ ██╔══██╗██╔═══██╗██║ ██╔╝";
 echo "${k}██╔██╗ ██║██║  ███╗██████╔╝██║   ██║█████╔╝ ";
@@ -53,7 +53,9 @@ echo "Exemplo de comando (ngrok http 80\nOu ngrok para ajuda)"
 ;;
 
 n)
+clear
 echo "Ngrok não instalado :("
+echo
 esac
 
 
