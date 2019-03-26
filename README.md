@@ -1,3 +1,3 @@
 # termux-ngrok
--[Documentação](https://ngrok.com/docs)
-update
+*[Documentação](https://ngrok.com/docs)
+
