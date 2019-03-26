@@ -1,7 +1,7 @@
 #!/bin/dash
 # Desenvolvido por Tchelo Noob
 atualizar='\033[1;32m'
-echo -e "$atualizar Atualizando repositório..."
+echo "$atualizar Atualizando repositório..."
 apt update && upgrade -y
 apt install -y wget
 
@@ -15,8 +15,8 @@ echo "${k}   ██║   ╚██████╗██║  ██║███�
 echo "${k}   ╚═╝    ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ";
 echo "${k} /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/";
 echo
-echo -e "Deseja instalar o Ngrok? [Y/n]" read opcao
-echo
+echo -e "Deseja instalar o Ngrok? [Y/n]"
+read opcao
 case $opcao in
 y)
 echo
