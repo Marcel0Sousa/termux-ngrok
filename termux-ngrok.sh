@@ -4,7 +4,7 @@ atualizar='\033[1;32m'
 echo "$atualizar Atualizando repositório..."
 apt update && upgrade -y
 apt install -y wget
-
+clear
 k='\033[01;32m'
 echo
 echo "${k}████████╗ ██████╗██╗  ██╗███████╗██╗      ██████╗ ";
