@@ -15,12 +15,12 @@ echo "${k}   ██║   ╚██████╗██║  ██║███�
 echo "${k}   ╚═╝    ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ";
 echo "${k} /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/";
 echo
-echo -e "Deseja instalar o Ngrok? [Y/n]"
+echo "Deseja instalar o Ngrok? [Y/n]"
 read opcao
 case $opcao in
 y)
 echo
-echo -e "Downloading Termux-ngrok..."
+echo "Downloading Termux-ngrok..."
 case `dpkg --print-architecture` in
 aarch64)
     architectureURL="arm64" ;;
