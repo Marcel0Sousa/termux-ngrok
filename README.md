@@ -10,7 +10,7 @@ cd termux-ngrok
 chmod +x termux-ngrok.sh
 ./termux-ngrok.sh
 ```
-# Screenshot
+### Screenshot
 
 <p align="centre">
 <img src="https://i.imgur.com/86lzmIf.png" alt="Script">
