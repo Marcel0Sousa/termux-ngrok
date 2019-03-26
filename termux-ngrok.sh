@@ -1,5 +1,7 @@
 #!/bin/dash
-
+# Desenvolvido por Tchelo Noob
+atualizar='\033[1;32m'
+echo -e "$atualizar Atualizando repositório..."
 apt update && upgrade -y
 apt install -y wget
 
@@ -13,12 +15,12 @@ echo "${k}   ██║   ╚██████╗██║  ██║███�
 echo "${k}   ╚═╝    ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ";
 echo "${k} /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/";
 echo
-echo "Deseja instalar o Ngrok? [Y/n]"
-read opcao
+echo -e "Deseja instalar o Ngrok? [Y/n]" read opcao
+echo
 case $opcao in
 y)
 echo
-echo "Downloading Termux-ngrok"
+echo -e "Downloading Termux-ngrok..."
 case `dpkg --print-architecture` in
 aarch64)
     architectureURL="arm64" ;;
