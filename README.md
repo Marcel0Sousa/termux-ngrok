@@ -3,12 +3,12 @@ O ngrok é um serviço que disponibiliza servidores por trás de redes NATs e Fi
 
 ### Instalando ngrok no Termux
 ```
-$ apt update && apt upgrade
-$ apt install git
-$ git clone https://github.com/tchelospy/termux-ngrok.git
-$ cd termux-ngrok
-$ chmod +x termux-ngrok.sh
-$ ./termux-ngrok.sh
+apt update && apt upgrade
+apt install git
+git clone https://github.com/tchelospy/termux-ngrok.git
+cd termux-ngrok
+chmod +x termux-ngrok.sh
+./termux-ngrok.sh
 ```
 
 
