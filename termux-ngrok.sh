@@ -16,7 +16,7 @@ echo -e "${k}   ██║   ╚██████╗██║  ██║██�
 echo -e "${k}   ╚═╝    ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ";
 echo -e "${k} /_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/";
 echo -e
-read -p "Install Ngrok? [Y/n]" opcao
+read -p "Install Ngrok? [Y/n]: " opcao
 case $opcao in
 y)
 echo
@@ -42,7 +42,7 @@ wget "https://github.com/tchelospy/NgrokTest/blob/master/ngrok-stable-linux-${ar
 unzip ngrok.zip
 mv ngrok /data/data/com.termux/files/usr/bin
 chmod 700 /data/data/com.termux/files/usr/bin/ngrok
-read -p "Remove ngrok.zip [Y/n]? remove
+read -p "Remove ngrok.zip [Y/n]?: " remove
 if [ $remove = "y" ]
     rm ngrok ngrok.zip
 then
