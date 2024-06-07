@@ -1,5 +1,5 @@
 #!/bin/dash
-# Desenvolvido por Tchelo Noob
+# Desenvolvido por Tchelo
 atualizar='\033[1;32m'
 echo "$atualizar Atualizando repositório..."
 apt update && upgrade -y
